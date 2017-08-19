@@ -1,7 +1,7 @@
 {
   "name": "dokina",
   "version": "1.0.0",
-  "description": "List of best rated movies currently playing at Cinemacity.sk. Data are provided by dokina.info.",
+  "description": "React Native app showing list of top rated movies currently playing at Cinemacity.sk. Data are provided by dokina.info.",
   "author": "Martin Litvaj <kamahl19@gmail.com> (http://litvaj.com)",
   "license": "MIT",
   "repository": {
