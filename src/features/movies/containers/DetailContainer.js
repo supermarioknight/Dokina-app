@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { selectMovie } from '../ducks';
+import { Text } from '../../../common/components';
 
 const getCode = props => props.navigation.state.params.code;
 
@@ -20,6 +21,6 @@ export default class DetailContainer extends Component {
   });
 
   render() {
-    return null;
+    return <Text>TODO</Text>;
   }
 }
