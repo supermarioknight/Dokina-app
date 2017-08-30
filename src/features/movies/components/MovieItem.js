@@ -16,16 +16,13 @@ const MovieItem = ({ item, onMovieClick, openExternalUrl }) => {
       center={
         <View style={styles.centerContainer}>
           <TouchableItem onPress={onClick}>
-            <Text style={styles.title}>
-              {item.skTitle}
-            </Text>
+            <Text style={styles.title}>{item.skTitle}</Text>
           </TouchableItem>
-          {item.skTitle !== item.originalTitle &&
+          {item.skTitle !== item.originalTitle && (
             <TouchableItem onPress={onClick}>
-              <Text>
-                ({item.originalTitle})
-              </Text>
-            </TouchableItem>}
+              <Text>({item.originalTitle})</Text>
+            </TouchableItem>
+          )}
           <View style={styles.ratingContainer}>
             <Text style={styles.rating}>
               IMDB:{' '}

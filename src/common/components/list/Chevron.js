@@ -4,14 +4,15 @@ import { StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { View, Button } from '../';
 
-const Chevron = ({ onPress }) =>
+const Chevron = ({ onPress }) => (
   <View style={styles.right}>
     <Button
       type="icon"
       onPress={onPress}
       title={<Icon name="chevron-right" style={styles.chevron} />}
     />
-  </View>;
+  </View>
+);
 
 Chevron.propTypes = {
   onPress: PropTypes.func.isRequired,

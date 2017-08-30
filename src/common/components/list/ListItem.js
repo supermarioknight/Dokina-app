@@ -3,21 +3,13 @@ import PropTypes from 'prop-types';
 import { StyleSheet } from 'react-native';
 import { View } from '../';
 
-const ListItem = ({ left, center, right }) =>
+const ListItem = ({ left, center, right }) => (
   <View style={styles.item}>
-    {left &&
-      <View style={styles.left}>
-        {left}
-      </View>}
-    {center &&
-      <View style={styles.center}>
-        {center}
-      </View>}
-    {right &&
-      <View style={styles.right}>
-        {right}
-      </View>}
-  </View>;
+    {left && <View style={styles.left}>{left}</View>}
+    {center && <View style={styles.center}>{center}</View>}
+    {right && <View style={styles.right}>{right}</View>}
+  </View>
+);
 
 ListItem.propTypes = {
   left: PropTypes.node,
